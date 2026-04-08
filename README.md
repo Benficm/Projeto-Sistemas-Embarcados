@@ -1,29 +1,27 @@
-# TÍTULO DO PROJETO
+ ECOSMART
 
-`CAMPUS/UNIDADE`
+Unidade Coração Eucarístico
 
-`CURSO`
+Engenharia da Computação
 
-`SEMESTRE`
+Quinto período
 
-`DISCIPLINA`
+Sistemas Embarcados
 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Felipe Benfica Martins
+* Ian Pereira Pinto Bomfim 
+
 
 ## Orientador
 
-* Nome completo do professor 1
+Mario Guimaraes Buratto
 
 ## Resumo
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Projeto criado com o intuito de automatizar e integrar o sistema de metereologia através do esp32 e sensores de clima e temperatura
 
 # Código (do arduino ou esp32)
 
