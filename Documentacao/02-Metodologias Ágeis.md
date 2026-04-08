@@ -3,24 +3,45 @@
 
 # Metodologia
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A metodologia adotada para o desenvolvimento deste projeto baseia-se em práticas de desenvolvimento ágil, com foco na organização incremental das entregas e na colaboração entre os membros da equipe. Foi escolhido o framework Scrum, devido à sua simplicidade e eficiência na gestão de projetos acadêmicos e tecnológicos.
+
+O desenvolvimento será dividido em etapas, nas quais serão implementadas funcionalidades específicas do sistema, como leitura de sensores, comunicação via Wi-Fi e visualização de dados.
+
+O ambiente de desenvolvimento será composto por ferramentas voltadas à programação de sistemas embarcados e Internet das Coisas (IoT), utilizando o microcontrolador ESP32 como base do projeto. O código será estruturado de forma modular, facilitando manutenção e evolução do sistema.
+
+Para a gestão do código-fonte, será utilizado o sistema de controle de versão Git, com repositórios hospedados no GitHub, permitindo o versionamento, colaboração e rastreabilidade das alterações realizadas pela equipe.
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+Divisão de Papéis
+
+A equipe será organizada seguindo a estrutura do Scrum, com definição clara de responsabilidades:
+
+Scrum Master: Responsável por organizar as tarefas, remover impedimentos e garantir o cumprimento da metodologia.
+Equipe de Desenvolvimento: Responsável pela implementação técnica do projeto, incluindo programação, testes e integração dos componentes.
 
 Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Aluno 1;
-- Equipe de Desenvolvimento: Aluno 1, Aluno 2, Aluno 3;
+- Scrum Master: Felipe Benfica;
+- Equipe de Desenvolvimento: Felipe Benfica, Ian Pinto;
 
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. Cole aqui um print do quadro Kanban utilizado pelo grupo.
+O processo de desenvolvimento seguirá o modelo Scrum adaptado para o contexto acadêmico, com as seguintes práticas:
+
+Sprints curtas (1 a 2 semanas), com entregas incrementais do sistema.
+Planejamento de Sprint: definição das tarefas a serem realizadas.
+Daily: alinhamento rápido entre os membros da equipe.
+Revisão de Sprint: verificação das funcionalidades implementadas.
+Retrospectiva: análise de melhorias no processo.
  
 
 ### Ferramentas
 
-As ferramentas utilizadas no projeto foram:
+As principais ferramentas utilizadas no desenvolvimento do projeto são:
 
-- Liste aqui as ferramentas utilizadas para desenvolvimento do projeto (como por exemplo: Arduino IDE, APP Inventor, trello e outros). Obs: não é para listar aqui os componentes utilizados.
+-Arduino IDE – Programação do ESP32
+-Visual Studio Code – Edição de código e suporte a extensões
+-Git – Controle de versão
+-GitHub – Hospedagem do repositório
+-Trello ou Notion – Gestão de tarefas
