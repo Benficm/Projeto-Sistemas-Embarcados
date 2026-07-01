@@ -27,9 +27,6 @@ Projeto criado com o intuito de automatizar e integrar o sistema de metereologia
 
 <li><a href="Codigo/README.md"> Código Fonte (.ino)</a></li>
 
-# Aplicativo para Smartphone
-
-<li><a href="App/README.md"> Aplicativo </a></li>
 
 # Apresentação
 
