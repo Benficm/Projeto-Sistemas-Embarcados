@@ -1,33 +1,77 @@
 
 # Materiais
 
-Os materiais utilizados no projeto foram:
-- Liste os materiais usados no projeto, como Arduino/ESP, sensores, atuadores e outros.
+Os materiais utilizados no desenvolvimento do projeto foram:
+
+ESP32;
+Sensor de temperatura e umidade DHT11;
+Protoboard;
+Jumpers;
+Cabo USB para alimentação e programação do ESP32;
+Computador para desenvolvimento e testes.
+
+Além dos componentes eletrônicos, foram utilizadas ferramentas de software para programação, testes e organização do projeto, como Arduino IDE, GitHub e Trello.
 
 # Desenvolvimento
 
-Descreva aqui como foi o desenvolvimento do trabalho, destacando cada uma das etapas necessárias para chegar até a solução final.
+O desenvolvimento do projeto foi dividido em etapas, permitindo que a equipe validasse o funcionamento de cada componente antes da integração completa do sistema.
 
+Inicialmente foi realizado o levantamento dos requisitos e a definição da arquitetura do projeto, escolhendo o ESP32 como plataforma principal devido ao seu baixo custo, capacidade de processamento e conectividade Wi-Fi integrada.
+
+Em seguida foi realizada a montagem do circuito eletrônico em protoboard, conectando o sensor DHT11 ao ESP32 conforme sua pinagem. Após essa etapa, iniciou-se o desenvolvimento do software responsável pela leitura dos dados do sensor.
+
+Os primeiros testes consistiram na verificação da comunicação entre o microcontrolador e o sensor, validando a leitura correta da temperatura e da umidade do ar através do Monitor Serial da Arduino IDE.
+
+Após a validação das leituras, foram implementadas melhorias no código para tornar a coleta dos dados mais estável, além da integração com a interface de visualização utilizada pelo projeto.
+
+Durante todo o desenvolvimento foram realizados testes funcionais para verificar a confiabilidade das medições e corrigir eventuais falhas de comunicação entre hardware e software.
+
+Ao final, o sistema apresentou funcionamento satisfatório, realizando continuamente a coleta e a disponibilização das informações meteorológicas.
 ## Desenvolvimento do Aplicativo
 
 ### Interface
 
-Descreva o desenvolvimento das telas do aplicativo.
+Foi desenvolvida uma interface simples e intuitiva para apresentar ao usuário as informações coletadas pelo sistema meteorológico.
+
+A interface permite visualizar em tempo real os valores de temperatura e umidade do ambiente, facilitando o acompanhamento das condições climáticas.
+
+O objetivo principal foi criar uma visualização clara, organizada e de fácil interpretação, permitindo que qualquer usuário consiga consultar as informações sem necessidade de conhecimentos técnicos.
 
 ### Código
 
-Descreva o desenvolvimento do código do aplicativo.
+O desenvolvimento do código da interface foi realizado de forma modular, permitindo a atualização automática dos dados enviados pelo ESP32.
+
+Foram implementadas funções responsáveis por receber os valores enviados pelo microcontrolador, processar essas informações e apresentá-las ao usuário de maneira organizada.
+
+A estrutura do código foi desenvolvida visando facilitar futuras expansões do sistema, permitindo adicionar novos sensores e novas funcionalidades sem grandes alterações na arquitetura do projeto.
 
 ## Desenvolvimento do Hardware
 
 ### Montagem
 
-Descreva como foi o processo da montagem do projeto.
+A montagem do hardware foi realizada inicialmente em uma protoboard, facilitando a realização de testes e possíveis alterações durante o desenvolvimento.
+
+O sensor DHT11 foi conectado ao ESP32 utilizando cabos jumper, respeitando a alimentação e os pinos de comunicação especificados pelo fabricante.
+
+Após a montagem, foram realizados testes elétricos para verificar a alimentação correta dos componentes e garantir o funcionamento adequado do circuito antes da execução do software.
+
+Essa abordagem permitiu corrigir rapidamente possíveis erros de ligação durante o processo de desenvolvimento.
 
 ### Desenvolvimento do Código
 
-Descreva como foi o desenvolvimento do código do arduino/ESP.
+O código embarcado foi desenvolvido utilizando a linguagem C++ na Arduino IDE.
 
+Inicialmente foram configuradas as bibliotecas necessárias para comunicação com o sensor DHT11 e com o ESP32.
+
+Posteriormente foram implementadas as funções responsáveis por inicializar os dispositivos, realizar a leitura periódica da temperatura e da umidade e disponibilizar essas informações para visualização.
+
+Durante o desenvolvimento foram realizados diversos testes para garantir a estabilidade das leituras, reduzindo erros ocasionais do sensor e assegurando o funcionamento contínuo do sistema.
 ## Comunicação entre App e Hardware
 
-Descreva como foi o processo de comunicação entre App e arduino/ESP.
+A comunicação entre o aplicativo (ou interface de monitoramento) e o ESP32 foi realizada por meio da conexão Wi-Fi integrada ao microcontrolador.
+
+Após estabelecer conexão com a rede, o ESP32 envia periodicamente os valores obtidos pelo sensor para a interface, permitindo a atualização praticamente em tempo real das informações apresentadas ao usuário.
+
+Durante os testes foi possível verificar que a comunicação ocorreu de forma estável, garantindo que os dados coletados pelo hardware fossem transmitidos corretamente para a interface de monitoramento.
+
+Essa integração demonstra a aplicação prática dos conceitos de Internet das Coisas (IoT), permitindo que informações ambientais sejam monitoradas remotamente de maneira simples e eficiente.
