@@ -27,7 +27,7 @@ Após a validação das leituras, foram implementadas melhorias no código para 
 Durante todo o desenvolvimento foram realizados testes funcionais para verificar a confiabilidade das medições e corrigir eventuais falhas de comunicação entre hardware e software.
 
 Ao final, o sistema apresentou funcionamento satisfatório, realizando continuamente a coleta e a disponibilização das informações meteorológicas.
-## Desenvolvimento do Aplicativo
+
 
 ### Interface
 
@@ -66,12 +66,3 @@ Inicialmente foram configuradas as bibliotecas necessárias para comunicação c
 Posteriormente foram implementadas as funções responsáveis por inicializar os dispositivos, realizar a leitura periódica da temperatura e da umidade e disponibilizar essas informações para visualização.
 
 Durante o desenvolvimento foram realizados diversos testes para garantir a estabilidade das leituras, reduzindo erros ocasionais do sensor e assegurando o funcionamento contínuo do sistema.
-## Comunicação entre App e Hardware
-
-A comunicação entre o aplicativo (ou interface de monitoramento) e o ESP32 foi realizada por meio da conexão Wi-Fi integrada ao microcontrolador.
-
-Após estabelecer conexão com a rede, o ESP32 envia periodicamente os valores obtidos pelo sensor para a interface, permitindo a atualização praticamente em tempo real das informações apresentadas ao usuário.
-
-Durante os testes foi possível verificar que a comunicação ocorreu de forma estável, garantindo que os dados coletados pelo hardware fossem transmitidos corretamente para a interface de monitoramento.
-
-Essa integração demonstra a aplicação prática dos conceitos de Internet das Coisas (IoT), permitindo que informações ambientais sejam monitoradas remotamente de maneira simples e eficiente.
